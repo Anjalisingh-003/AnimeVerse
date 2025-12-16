@@ -1,0 +1,1072 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --red:#1E90FF; /* changed from #E50914 to DodgerBlue */
+    --black:#000000;
+    --light-color:#181818;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+/* existing styles unchanged... */
+
+/* Genre Dropdown Styles */
+.genre-dropdown {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: var(--light-color);
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
+    z-index: 10001;
+    width: 400px;
+    display: none;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.genre-dropdown h2 {
+    color: #ffb6b9;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.genre-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.genre-item {
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    white-space: nowrap;
+}
+
+.genre-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .genre-dropdown {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 1rem 0;
+        display: none;
+        flex-direction: column;
+    }
+    .genre-list {
+        justify-content: center;
+    }
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+body{
+    background-color:var(--light-color);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top:5.5rem;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background:var(--light-color);
+}
+
+
+
+header{
+    
+    top: 0;
+    left:0;
+    right:0;
+    padding: 1rem 7%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    box-shadow: var(--box-shadow);
+}
+
+.heading{
+    text-align: center;
+    color: #ba1187;
+    margin-bottom: 3rem;
+    font-size:4rem;
+}
+
+.btn{
+    margin-top:1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: black;
+    background-color: aquamarine;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
+.btn:hover{
+    background: var(--black);
+    color: var(--red);
+    letter-spacing: .1rem;
+}
+
+.logo{
+  font-size: 1.75rem;
+  
+}
+
+header.logo{
+    color: #fff;;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    
+}
+
+header .logo i{
+    color: #ccc;
+    font-size: large;
+    justify-content: space-around;
+
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: mediumpurple;
+}
+
+
+
+header .icons #menu-bars{
+    display: none;
+}
+.searchbox {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 300px;
+  background: var(--light-color);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.7);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  animation: slideDown 0.3s ease forwards;
+  z-index: 10001;
+}
+
+.searchbox form {
+  display: flex;
+  width: 100%;
+}
+
+.searchbox input[type="text"] {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 1.6rem;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid var(--red);
+  background: var(--black);
+  color: #fff;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.searchbox input[type="text"]:focus {
+  box-shadow: 0 0 8px var(--red);
+}
+
+.searchbox button {
+  padding: 8px 15px;
+  background: var(--red);
+  border-radius: 0 5px 5px 0;
+  border: none;
+  color: #2106ed;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.searchbox button:hover {
+  background: deeppink;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.home{
+    padding:0;
+}
+
+.home-slider {
+    height: 100vh;
+}
+
+.home .box{
+    min-height: 100vh;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content:flex-end;
+    padding:2rem 9%;
+}
+
+.home .box{
+    justify-content: flex-start;
+}
+
+.home .box.second{
+    justify-content: flex-end;
+}
+
+.home .box .content{
+    width:50rem;
+}
+
+.home .box .content h3{
+    text-shadow: #010e1b;
+    font-size: 6rem;
+    color: rgb(25, 4, 117);
+    padding-top: .5rem;
+    text-transform: uppercase;
+}
+
+
+
+.home .box .content p {
+  line-height: 2;
+  color: deeppink;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+@keyframes fadeSlideUp {
+}
+
+.home .box .content p{
+    line-height: 2;
+    color: rgb(248, 8, 8);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.anime{
+    padding:5rem;
+}
+
+.anime .box{
+    width: 299px;
+    height:168px;
+}
+
+.anime .content h3{
+    font-size: 1.7rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.anime .content P{
+    font-size: 1.2rem;
+    color:#fff;
+    text-decoration: none;
+
+}
+
+.action{
+    padding:5rem;
+}
+
+.action .box{
+   width:299px;
+   height:168px;
+}
+
+.action .content h3{
+    font-size: 1.7rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.action .content P{
+    font-size: 1.2rem;
+    color:#fff;
+    text-decoration: none;
+
+}
+
+.child{
+    padding:5rem;
+}
+
+.child .box{
+    width:299px;
+    height:168px;
+ }
+
+ .child .content h3{
+     font-size: 1.7rem;
+     color: #ffffff;
+     text-transform: uppercase;
+     text-align: center;
+ }
+
+ .child .content P{
+     font-size: 1.2rem;
+     color:#fff;
+     text-decoration: none;
+
+ }
+
+
+.family{
+    padding:5rem;
+}
+
+.family .box{
+    width:299px;
+    height:168px;
+ }
+
+ .family .content h3{
+     font-size: 1.7rem;
+     color: #ffffff;
+     text-transform: uppercase;
+     text-align: center;
+ }
+
+ .family .content P{
+     font-size: 1.2rem;
+     color:#fff;
+     text-decoration: none;
+
+ }
+
+
+
+.footer {
+    background-color: var(--black);
+    color: var(--red);
+    padding: 4rem 9%;
+    font-size: 1.6rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex: 1 1 250px;
+}
+
+.footer-about .logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--red);
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.footer-about p {
+    max-width: 400px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--red);
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: var(--red);
+}
+
+.footer-contact p {
+    margin-bottom: 0.8rem;
+    color: #ccc;
+}
+
+.footer-socials a {
+    color: #ccc;
+    margin-right: 1rem;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: var(--red);
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+/* media query */
+@media(max-width: 991px){
+    html{
+        font-size: 55%;
+
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding:2rem;
+    }
+    .home .box .content h3 {
+        font-size: 4.5rem;
+    }
+    .anime, .action, .child, .family {
+        padding: 3rem 1rem;
+    }
+    .anime .box, .action .box, .child .box, .family .box {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto 2rem;
+    }
+    .download {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    .downlod-links {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+    .downlod-links a {
+        font-size: 1.4rem;
+        padding: 10px 15px;
+    }
+    .screenshots-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .screenshots-content img {
+        height: auto;
+    }
+    .video-container video {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+/* Custom AOS animation overrides for smoother effects */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-timing-function: ease-out;
+  transition-duration: 1s;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Additional fade-up animation */
+[data-aos="fade-up"] {
+  transform: translateY(20px);
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(20px);
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(-20px);
+}
+
+[data-aos="zoom-in"] {
+  transform: scale(0.8);
+}
+
+@media(max-width: 768px){
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .navbar{
+      position: sticky;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--black);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a{
+        display:block;
+        padding:1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: var(--red);
+    }
+    .home .box .content h3{
+        font-size:5rem;
+    }
+    .anime, .action, .child, .family {
+        padding: 2rem 1rem;
+    }
+    .anime .box, .action .box, .child .box, .family .box {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 0 auto 1.5rem;
+    }
+    .download {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    .downlod-links {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 0.8rem;
+    }
+    .downlod-links a {
+        font-size: 1.3rem;
+        padding: 8px 12px;
+    }
+    .screenshots-content {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .screenshots-content img {
+        height: auto;
+    }
+    .video-container video {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 450px){
+    html{
+        font-size: 50%;
+
+    }
+    section {
+        padding: 1rem 1.5rem;
+    }
+    .home .box {
+        padding: 1rem;
+        justify-content: center !important;
+    }
+    .home .box .content {
+        width: 100% !important;
+        padding: 0 1rem;
+    }
+    .home .box .content h3 {
+        font-size: 3.5rem !important;
+        text-align: center;
+    }
+    .home .box .content p {
+        font-size: 1.2rem !important;
+        text-align: center;
+    }
+    .anime, .action, .child, .family {
+        padding: 1.5rem 0.5rem !important;
+    }
+    .anime .box, .action .box, .child .box, .family .box {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 auto 1rem !important;
+    }
+    .anime .content h3, .action .content h3, .child .content h3, .family .content h3 {
+        font-size: 1.4rem !important;
+        text-align: center;
+    }
+    .anime .content P, .action .content P, .child .content P, .family .content P {
+        font-size: 1rem !important;
+        text-align: center;
+    }
+    .download {
+        padding: 0 1rem !important;
+        max-width: 100% !important;
+    }
+    .downlod-links {
+        grid-template-columns: 1fr !important;
+        gap: 0.5rem !important;
+    }
+    .downlod-links a {
+        font-size: 1.2rem !important;
+        padding: 8px 10px !important;
+    }
+    .screenshots-content {
+        grid-template-columns: 1fr !important;
+        gap: 0.5rem !important;
+    }
+    .screenshots-content img {
+        height: auto !important;
+        width: 100% !important;
+    }
+    .footer-container {
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+    .footer-about, .footer-links, .footer-contact {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+    }
+    .video-container video {
+        width: 100% !important;
+        height: auto !important;
+        margin-left: 0 !important;
+    }
+}
+
+/* Add hover animation to buttons */
+.btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Add zoom-in hover animation on divs with class 'box' */
+.box {
+  transition: transform 0.3s ease;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* 3D card container */
+.card {
+  width: 300px;
+  height: 350px;
+  perspective: 1500px;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Card inner wrapper */
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  color: white;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-front {
+  background-size: cover !important;
+  background-position: center !important;
+  z-index: 2;
+  transform: rotateY(0deg);
+  position: relative;
+}
+
+.card-back {
+  background-color: #222;
+  z-index: 1;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding-top: 0.5rem;
+}
+
+/* Flipped state */
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Close button on back face */
+.card-back .close-btn {
+  margin-top: 1rem;
+  align-self: center;
+  background-color: var(--red);
+  color: var(--black);
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.card-back .close-btn:hover {
+  background-color: #b30000;
+}
+
+/* Add hover animation to navbar links */
+header .navbar a {
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+header .navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--red);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+header .navbar a:hover::after,
+header .navbar a.active::after {
+  width: 100%;
+  left: 0;
+}
+
+header .navbar a:hover {
+  color: #ff4081; /* example highlight color */
+  transform: translateY(-3px);
+}
+
+header .navbar a:hover {
+  color: #ff4081; /* example highlight color */
+  transform: translateY(-3px);
+}
+
+/* Add hover animation to icons */
+.icons i, .icons a {
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+#watch-later-toggle , #login{
+  background-color: var(--red);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 5rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.8rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(30, 144, 255, 0.6);
+}
+#watch-later-toggle, #login:hover {
+  background-color: #0d6efd;
+  color: white;
+  box-shadow: 0 6px 15px rgba(13, 110, 253, 0.8);
+}
+
+
+.icons i:hover, .icons a:hover {
+  color: #ff4081;
+  transform: scale(1.2);
+}
+
+/* Add entrance animation for header logo */
+.logo {
+  animation: fadeInDown 1s ease forwards;
+}
+
+/* Add subtle fade-in animation for sections on page load */
+section {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* Keyframes for fadeInDown and fadeInUp (if not using Animate.css classes) */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Wishlist button styles */
+.wishlist-btn {
+  margin-top: 0.5rem;
+  background-color: var(--red);
+  border: 2px solid var(--red);
+  color: white;
+  padding: 0.4rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(30, 144, 255, 0.6);
+}
+
+.wishlist-btn:hover {
+  background-color: #0d6efd; /* darker blue */
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(13, 110, 253, 0.8);
+}
+
+.wishlist-btn.added {
+  background-color: #0d6efd;
+  color: white;
+  cursor: default;
+  animation: pulse 1.5s infinite;
+}
+
+/* Pulse animation for added state */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(229, 9, 20, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(229, 9, 20, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(229, 9, 20, 0);
+  }
+}
+
+/* Wishlist modal styles */
+.wishlist-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+}
+
+.wishlist-modal.hidden {
+  display: none;
+}
+
+.wishlist-content {
+  background-color: var(--light-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 500px;
+  color: #fff;
+  box-shadow: var(--box-shadow);
+  position: relative;
+}
+
+.wishlist-content h2 {
+  margin-bottom: 1rem;
+  color: var(--red);
+  text-align: center;
+}
+
+.wishlist-content ul {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.wishlist-content ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--red);
+  font-size: 1.6rem;
+}
+
+.remove-btn {
+  background-color: var(--red);
+  border: none;
+  color: var(--black);
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #b30000;
+}
+
+/* Animated Watch Later List Panel */
+.animated-wishlist {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.7);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.animated-wishlist.show {
+  transform: translateX(0);
+}
+
+.animated-wishlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+}
+
+.animated-wishlist-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.animated-wishlist .close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#wishlist-items {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+#wishlist-items li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#wishlist-items li button.remove-btn {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+#wishlist-items li button.remove-btn:hover {
+  background-color: #c0392b;
+}

@@ -1,0 +1,17 @@
+Please add the following CSS styles to your style.css file to style the watch later toggle button in the header:
+
+#watch-later-toggle {
+  background: none;
+  border: none;
+  color: var(--light-color, #fff);
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+#watch-later-toggle:hover {
+  color: var(--red, #e74c3c);
+}
+
+Add these styles anywhere in your style.css file. This will ensure the toggle button fits the header design and has hover effects.

@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <!--font awesome cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+</head>
+<body>
+  <!--header section start-->
+  <header>
+    <a href="#" class="logo"><i class="fa-solid fa-ghost"></i>AnimeVerse</a>
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#anime">anime</a>
+      <a href="#action">action</a>
+      <a href="#child">child</a>
+      <a href="#family">family</a>
+      <a href="#genre" id="genre-link">genre <i class="fas fa-caret-down"></i></a>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-bars" id="menu-bars"></i>
+      <i class="fas fa-search" id="search-icon" style="cursor:pointer;"></i>
+      <button
+        id="watch-later-toggle"
+        class="watch-later-toggle-btn"
+        title="Toggle Watch Later List"
+      >
+        Watch Later
+      </button>
+       <button id="login"><a href="login.html">login/signup</a></button>
+    </div>
+    <div class="searchbox" style="display:none;">
+      <form>
+        <input type="text" name="search anime" placeholder="Search anime..." />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <!-- Genre Dropdown Panel -->
+    <div id="genre-dropdown" class="genre-dropdown" style="display:none;">
+      <h2>Genres</h2>
+      <div class="genre-list">
+        <span class="genre-item" style="color:#b6e880;">Action</span>
+        <span class="genre-item" style="color:#ffb6b9;">Adventure</span>
+        <span class="genre-item" style="color:#ff6f59;">Cars</span>
+        <span class="genre-item" style="color:#c9c9ff;">Comedy</span>
+        <span class="genre-item" style="color:#a0e7e5;">Dementia</span>
+        <span class="genre-item" style="color:#ff6f59;">Demons</span>
+        <span class="genre-item" style="color:#ffb6b9;">Drama</span>
+        <span class="genre-item" style="color:#ffb6b9;">Ecchi</span>
+        <span class="genre-item" style="color:#b28dff;">Fantasy</span>
+        <span class="genre-item" style="color:#ff6f59;">Game</span>
+        <span class="genre-item" style="color:#b28dff;">Harem</span>
+        <span class="genre-item" style="color:#a0e7e5;">Historical</span>
+        <span class="genre-item" style="color:#c9c9ff;">Horror</span>
+        <span class="genre-item" style="color:#a0e7e5;">Isekai</span>
+        <span class="genre-item" style="color:#b6e880;">Josei</span>
+        <span class="genre-item" style="color:#ffb6b9;">Kids</span>
+        <span class="genre-item" style="color:#ff6f59;">Magic</span>
+        <span class="genre-item" style="color:#c9c9ff;">Martial Arts</span>
+        <span class="genre-item" style="color:#a0e7e5;">Mecha</span>
+        <span class="genre-item" style="color:#a0e7e5;">Military</span>
+        <span class="genre-item" style="color:#b6e880;">Music</span>
+        <span class="genre-item" style="color:#b6e880;">Mystery</span>
+        <span class="genre-item" style="color:#ffb6b9;">Parody</span>
+        <span class="genre-item" style="color:#ff6f59;">Police</span>
+        <span class="genre-item" style="color:#c9c9ff;">Psychological</span>
+        <span class="genre-item" style="color:#b28dff;">Romance</span>
+        <span class="genre-item" style="color:#c9c9ff;">Samurai</span>
+        <span class="genre-item" style="color:#a0e7e5;">School</span>
+        <span class="genre-item" style="color:#b6e880;">Sci-Fi</span>
+        <span class="genre-item" style="color:#ffb6b9;">Seinen</span>
+        <span class="genre-item" style="color:#ff6f59;">Shoujo</span>
+        <span class="genre-item" style="color:#ffb6b9;">Shoujo Ai</span>
+        <span class="genre-item" style="color:#a0e7e5;">Shounen</span>
+        <span class="genre-item" style="color:#c9c9ff;">Shounen Ai</span>
+        <span class="genre-item" style="color:#b6e880;">Slice of Life</span>
+        <span class="genre-item" style="color:#b6e880;">Space</span>
+      </div>
+    </div>
+  </header>
+  
+   
+
+  <!--home section start-->
+
+  <section
+    class="home"
+    id="home"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    data-aos-once="true"
+  >
+    <div class="home-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        <div class="box" style="background: url('aot.jpg') no-repeat;">
+            <div class="content">
+              <h3>Attack On Titan</h3>
+              <p>
+               Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure
+              </p>
+               <a href="https://hianimez.to/attack-on-titan-112" class="btn">Watch Now</a>
+              <button
+                class="wishlist-btn"
+                data-title="Attack On Titan"
+                data-video="https://hianimez.to/attack-on-titan-112"
+              >
+                ♡ Watch Later
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+        <div
+            class="box second"
+            style="background: url('tokyo revengers.jpg') no-repeat;"
+          >
+            <div class="content">
+              <h3>Tokyo Revengers</h3>
+              <p>
+                In spite of his best time-leaping efforts, Takemichi Hanagaki continuously fails to prevent the present-day death of Hinata Tachibana, his adolescent love.
+              </p>
+              <a href="https://hianimez.to/tokyo-revengers-christmas-showdown-uncensored-18315?ref=search" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Tokyo Revengers"
+                  data-video="https://hianimez.to/tokyo-revengers-christmas-showdown-uncensored-18315?ref=search"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+        <div class="box" style="background: url('naruto shippuden.jpg') no-repeat;">
+            <div class="content">
+              <h3>Naruto</h3>
+              <p>
+                Moments prior to Naruto Uzumaki's birth, In order to put an end to the Kyuubi's rampage, the leader of the village, the Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto. Now, Naruto is a hyperactive and knuckle-headed ninja still living in Konohagakure
+              </p>
+              <a href="https://hianimez.to/naruto-677" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Naruto"
+                  data-video="https://hianimez.to/naruto-677"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box" style="background: url('death.jpg') no-repeat;">
+            <div class="content">
+              <h3>Death Note</h3>
+              <p>
+                A shinigami, as a god of death, can kill any person—provided they see their victim's face and write their victim's name in a notebook called a Death Note. One day, Ryuk, bored by the shinigami lifestyle and interested in seeing how a human would use a Death Note, drops one into the human realm.
+              </p>
+              <a href="https://hianimez.to/death-note-60" class="btn">Watch Now</a>
+              <button
+                class="wishlist-btn"
+                data-title="Death Note"
+                data-video="https://hianimez.to/death-note-60"
+              >
+                ♡ Watch Later
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box" style="background: url('spy x family.jpg') no-repeat;">
+            <div class="content">
+              <h3>Spy x Family</h3>
+              <p>
+                For the agent known as "Twilight," no order is too tall if it is for the sake of peace. Operating as Westalis' master spy, Twilight works tirelessly to prevent extremists from sparking a war with neighboring country Ostania.
+              </p>
+                <a href="https://hianimez.to/spy-x-family-17977" class="btn">Watch Now</a>
+              <button
+                class="wishlist-btn"
+                data-title="Spy x Family"
+                data-video="https://hianimez.to/spy-x-family-17977"
+              >
+                ♡ Watch Later
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box" style="background: url('jujutsu.jpg') no-repeat;">
+            <div class="content">
+              <h3>Jujutsu kaisen</h3>
+              <p>
+                Idly indulging in baseless paranormal activities with the Occult Club, high schooler Yuuji Itadori spends his days at either the clubroom or the hospital, where he visits his bedridden grandfather. However, this leisurely lifestyle soon takes a turn for the strange when he unknowingly encounters a cursed item. 
+              </p>
+                <a href="https://hianimez.to/jujutsu-kaisen-tv-534" class="btn">Watch Now</a>
+              <button
+                class="wishlist-btn"
+                data-title="Jujutsu kaisen"
+                data-video="https://hianimez.to/jujutsu-kaisen-tv-534"
+              >
+                ♡ Watch Later
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!--anime section start-->
+
+<section
+    class="anime"
+    id="anime"
+    data-aos="fade-left"
+    data-aos-duration="1000"
+    data-aos-once="true"
+  >
+    <h1 class="heading">Anime</h1>
+    <div class="swiper action-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(jujutsu\ kaisen.jpg) no-repeat"
+            >
+              <h3>Jujutsu Kaisen</h3>
+            </div>
+<div class="buttons">
+              <a href="https://hianimez.to/jujutsu-kaisen-tv-534" class="btn">Watch Now</a>
+              <button
+                class="wishlist-btn"
+                data-title="Jujutsu Kaisen"
+                data-video="https://hianimez.to/jujutsu-kaisen-tv-534"
+              >
+                ♡ Watch Later
+              </button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>
+                A dark fantasy anime following Yuji Itadori as he joins a secret organization to fight curses and protect humanity.
+              </p>
+              <p><strong>Genre:</strong> Action, Supernatural, Dark Fantasy</p>
+              <p><strong>Rating:</strong> 8.7/10</p>
+              <p><strong>Release Year:</strong> 2020</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(horimiya.jpeg) no-repeat"
+            >
+              <h3>Horimiya</h3>
+            </div>
+<div class="buttons">
+              <a href="https://hianimez.to/horimiya-15733" class="btn">Watch Now</a>
+              <button
+                class="wishlist-btn"
+                data-title="Horimiya"
+                data-video="https://hianimez.to/horimiya-15733"
+              >
+                ♡ Watch Later
+              </button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>
+                A romantic comedy about the secret lives of two high school students balancing their public and private personas.
+              </p>
+              <p><strong>Genre:</strong> Romance, Comedy, Slice of Life</p>
+              <p><strong>Rating:</strong> 8.0/10</p>
+              <p><strong>Release Year:</strong> 2021</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(demon\ slayer.jpeg) no-repeat"
+            >
+              <h3>Demon Slayer</h3>
+            </div>
+<div class="buttons">
+              <a href="https://hianimez.to/demon-slayer-kimetsu-no-yaiba-47" class="btn">Watch Now</a>
+              <button
+                class="wishlist-btn"
+                data-title="Demon Slayer"
+                data-video="https://hianimez.to/demon-slayer-kimetsu-no-yaiba-47"
+              >
+                ♡ Watch Later
+              </button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Demon Slayer follows Tanjiro Kamado's quest to save his sister and fight demons after his family is slaughtered.</p>
+              <p><strong>Genre:</strong> Action, Adventure, Dark Fantasy</p>
+            </div>
+          </div>
+        </div>
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(my\ hero\ academia.jpg) no-repeat"
+            >
+                <h3>My Hero Academia</h3>
+            </div>
+            <div class="buttons">
+                <a href="https://hianimez.to/my-hero-academia-322?ref=search" class="btn">Watch Now</a>
+<button
+  class="wishlist-btn"
+  data-title="My Hero Academia"
+  data-video="https://hianimez.to/my-hero-academia-322?ref=search"
+>
+  ♡ Watch Later
+</button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>My Hero Academia is about a boy born without superpowers in a world where they are common, striving to become a hero.</p>
+              <p><strong>Genre:</strong> Action, Superhero, Adventure</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(naruto.png) no-repeat"
+            >
+                <h3>Naruto</h3>
+            </div>
+            <div class="buttons">
+                <a href="https://hianimez.to/naruto-677" class="btn">Watch Now</a>
+<button
+  class="wishlist-btn"
+  data-title="Naruto"
+  data-video="https://hianimez.to/naruto-677"
+>
+  ♡ Watch Later
+</button>
+                
+           
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Black Clover follows Asta and Yuno, orphans aiming to become the Wizard King in a world of magic and rivalry.</p>
+              <p><strong>Genre:</strong> Action, Adventure, Fantasy</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(black\ clover.jpg) no-repeat"
+            >
+                <h3>Black Clover</h3>
+            </div>
+            <div class="buttons">
+                <a href="https://hianimez.to/black-clover-2404" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Black clover"
+                  data-video="https://hianimez.to/black-clover-2404"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Black Clover follows Asta and Yuno, orphans aiming to become the Wizard King in a world of magic and rivalry.</p>
+              <p><strong>Genre:</strong> Action, Adventure, Fantasy</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(haikyu.jpg) no-repeat"
+            >
+                <h3>Haikyu</h3>
+            </div>
+            <div class="buttons">
+                <a href="https://hianimez.to/haikyu-76" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Haikyu"
+                  data-video="https://hianimez.to/haikyu-76"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Kakegurui is a psychological thriller set in a prestigious academy where students engage in high-stakes gambling to determine social status.</p>
+              <p><strong>Genre:</strong> Psychological, Drama, Thriller</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(sword\ art\ online.jpg) no-repeat"
+            >
+                <h3>Sword Art Online</h3>
+            </div>
+            <div class="buttons">
+                <a href="https://hianimez.to/sword-art-online-2274" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Sword Art Online"
+                  data-video="https://hianimez.to/sword-art-online-2274"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Tokyo Revengers follows a man who travels back in time to save his ex-girlfriend and change the fate of his friends in a gang-ridden world.</p>
+              <p><strong>Genre:</strong> Action, Drama, Supernatural</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(kengan.jpg) no-repeat"
+            >
+                <h3>Kengan Ashura</h3>
+            </div>
+            <div class="buttons">
+                <a href="https://hianimez.to/kengan-ashura-1636" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Kengan Ashura"
+                  data-video="https://hianimez.to/kengan-ashura-1636"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Naruto is a story about a young ninja striving to become the strongest leader of his village while overcoming challenges and making friends.</p>
+              <p><strong>Genre:</strong> Action, Adventure, Fantasy</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(spirited\ away.jpg) no-repeat"
+            >
+                <h3>Spirited Away</h3>
+            </div>
+            <div class="buttons">
+<a href="https://hianimez.to/spirited-away-20" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Spirited Away"
+                  data-video="https://hianimez.to/spirited-away-20"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Death Note follows a high school student who gains a supernatural notebook that allows him to kill anyone by writing their name in it.</p>
+              <p><strong>Genre:</strong> Mystery, Supernatural, Thriller</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(black\ clover.jpg) no-repeat"
+            >
+                <h3>Black Clover</h3>
+            </div>
+            <div class="buttons">
+                <a href="https://hianimez.to/black-clover-2404" class="btn">Watch Now</a>
+<button
+  class="wishlist-btn"
+  data-title="Black clover"
+  data-video="https://hianimez.to/black-clover-2404"
+>
+  ♡ Watch Later
+</button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Black Clover follows Asta and Yuno, orphans aiming to become the Wizard King in a world of magic and rivalry.</p>
+              <p><strong>Genre:</strong> Action, Adventure, Fantasy</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(tokyo\ revengers.jpg) no-repeat"
+            >
+                <h3>Tokyo Revengers</h3>
+            </div>
+            <div class="buttons">
+                <a href="https://hianimez.to/tokyo-revengers-15585" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Tokyo Revengers"
+                  data-video="https://hianimez.to/tokyo-revengers-15585"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Spy x Family is about a spy who creates a fake family as part of a mission, unaware that his new wife and daughter have secrets of their own.</p>
+              <p><strong>Genre:</strong> Action, Comedy, Slice of Life</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(solo\ leveling.jpeg) no-repeat"
+            >
+                <h3>Solo Leveling</h3>
+            </div>
+            <div class="buttons">
+<a href="https://hianimez.to/solo-leveling-18718" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Solo Leveling"
+                  data-video="https://hianimez.to/solo-leveling-18718"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Jujutsu Kaisen follows a high school student who joins a secret organization to fight curses and protect humanity.</p>
+              <p><strong>Genre:</strong> Action, Supernatural, Dark Fantasy</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+</div>
+<div class="swiper-pagination action-pagination"></div>
+</section>
+
+    <!--child section start-->
+
+<section class="child" id="child" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+        <h1 class="heading">Child</h1>
+   <div class="swiper child-slider">
+        <div class="swiper-wrapper">
+
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(spirited\ away.jpg) no-repeat"
+            >
+                <h3>Spirited Away</h3>
+            </div>
+            <div class="buttons">
+                <a href="https://hianimez.to/spirited-away-20" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Spirited Away"
+                  data-video="https://hianimez.to/spirited-away-20"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Spirited Away is a young girl’s journey through a magical world to save her parents and find her way home.</p>
+              <p><strong>Genre:</strong> Fantasy, Adventure, Family</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(go\ astro\ boy.jpg) no-repeat"
+            >
+                <h3>Go Astro Boy</h3>
+            </div>
+            <div class="buttons">
+<a href="https://hianimez.to/astro-boy-3200" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Astro Boy"
+                  data-video="https://hianimez.to/astro-boy-3200"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Astro Boy is a classic story of a robot boy with human emotions fighting for justice.</p>
+              <p><strong>Genre:</strong> Sci-Fi, Adventure, Family</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(arriety.jpg) no-repeat"
+            >
+                <h3>Arriety</h3>
+            </div>
+            <div class="buttons">
+                <a href="https://hianimez.to/astro-boy-3200" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Arriety"
+                  data-video="https://hianimez.to/astro-boy-3200"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Arriety is a tale of tiny people living secretly in a human house, exploring friendship and courage.</p>
+              <p><strong>Genre:</strong> Fantasy, Adventure, Family</p>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(beyblade.jpg) no-repeat"
+            >
+                <h3>Beyblade</h3>
+            </div>
+            <div class="buttons">
+<a href="https://hianimez.to/beyblade-shogun-steel-7539" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Beyblade"
+                  data-video="https://hianimez.to/beyblade-shogun-steel-7539"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Beyblade is a competitive spinning top game anime with intense battles and friendships.</p>
+              <p><strong>Genre:</strong> Action, Sports, Family</p>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(beyblade\ burst.jpg) no-repeat"
+            >
+                <h3>Beyblade Burst</h3>
+            </div>
+            <div class="buttons">
+<a href="https://hianimez.to/beyblade-burst-gachi-7929" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Beyblade Burst"
+                  data-video="https://hianimez.to/beyblade-burst-gachi-7929"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Beyblade Burst features new characters and powerful Beyblades in thrilling battles.</p>
+              <p><strong>Genre:</strong> Action, Sports, Family</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(black\ clover.jpg) no-repeat"
+            >
+                <h3>Black Clover</h3>
+            </div>
+            <div class="buttons">
+<a href="https://hianimez.to/black-clover-2404" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Black clover"
+                  data-video="https://hianimez.to/black-clover-2404"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Horimiya is a romantic comedy about two high school students who hide their true selves from others but share a close bond.</p>
+              <p><strong>Genre:</strong> Romance, Comedy, Slice of Life</p>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(castle.jpg) no-repeat"
+            >
+                <h3>Castle</h3>
+            </div>
+            <div class="buttons">
+                <a href="https://hianimez.to/dr-slump-and-arale-chan-movie-04-hoyoyo-the-treasure-of-nanaba-castle-6331?ref=search" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Castle"
+                  data-video="https://hianimez.to/dr-slump-and-arale-chan-movie-04-hoyoyo-the-treasure-of-nanaba-castle-6331?ref=search"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Castle is a family-friendly mystery series following a crime novelist and detective solving cases together.</p>
+              <p><strong>Genre:</strong> Mystery, Crime, Family</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(ponyo.jpg) no-repeat"
+            >
+                <h3>Ponyo</h3>
+            </div>
+            <div class="buttons">
+<a href="https://hianimez.to/ponyo-671" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Ponyo"
+                  data-video="https://hianimez.to/ponyo-671"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Ponyo is a heartwarming story of a goldfish princess who longs to become human.</p>
+              <p><strong>Genre:</strong> Fantasy, Adventure, Family</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(pokemon.jpg) no-repeat"
+            >
+                <h3>Pokemon</h3>
+            </div>
+            <div class="buttons">
+<a href="https://hianimez.to/pokemon-paldean-winds-19313" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Pokemon"
+                  data-video="https://hianimez.to/pokemon-paldean-winds-19313"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Pokemon follows trainers capturing and battling creatures in a vibrant world.</p>
+              <p><strong>Genre:</strong> Adventure, Fantasy, Family</p>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(black\ clover.jpg) no-repeat"
+            >
+                <h3>Black Clover</h3>
+            </div>
+            <div class="buttons">
+<a href="https://hianimez.to/black-clover-2404" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Black clover"
+                  data-video="https://hianimez.to/black-clover-2404"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Demon Slayer follows Tanjiro Kamado's quest to save his sister and fight demons after his family is slaughtered.</p>
+              <p><strong>Genre:</strong> Action, Adventure, Dark Fantasy</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(beyblade\ burst.jpg) no-repeat"
+            >
+                <h3>Beyblade Burst</h3>
+            </div>
+            <div class="buttons">
+                <a href="https://hianimez.to/beyblade-burst-dynamite-battle-17718" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Beyblade Burst"
+                  data-video="https://hianimez.to/beyblade-burst-dynamite-battle-17718"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+</div>
+<div class="swiper-pagination child-pagination"></div>
+</section>
+
+<!--action section start-->
+
+<section class="action" id="action" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+<h1 class="heading">Action</h1>
+   <div class="swiper action-slider">
+<div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(basketball.jpg) no-repeat"
+            >
+                <h3>Kuroko's Basketball Specials</h3>
+            </div>
+            <div class="buttons">
+                <a
+                  href="https://hianimez.to/kurokos-basketball-special-2335"
+                  class="btn"
+                  >Watch Now</a
+                >
+                <button
+                  class="wishlist-btn"
+                  data-title="Kuroko's Basketball Specials"
+                  data-vide0="https://hianimez.to/kurokos-basketball-special-2335"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>My Hero Academia is about a boy born without superpowers in a world where they are common, striving to become a hero.</p>
+              <p><strong>Genre:</strong> Action, Superhero, Adventure</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(tokyo\ revengers.jpg) no-repeat"
+            >
+                <h3>Tokyo Revengers</h3>
+            </div>
+            <div class="buttons">
+<a href="https://hianimez.to/tokyo-revengers-15585" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-video="https://hianimez.to/tokyo-revengers-15585"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Haikyu is a sports anime about a high school volleyball team striving for the national championship.</p>
+              <p><strong>Genre:</strong> Sports, Drama, Comedy</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(ahiru.jpg) no-repeat"
+            >
+                <h3>AHIRU NO SORA</h3>
+            </div>
+                <div class="buttons">
+                <a href="https://hianimez.to/ahiru-no-sora-1896" class="btn">Watch Now</a>
+                <button
+                      class="wishlist-btn"
+                      data-title="AHIRU NO SORA"
+                      data-video="https://hianimez.to/ahiru-no-sora-1896"
+                    >
+                        ♡ Watch Later
+                    </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Sword Art Online follows players trapped in a virtual reality MMORPG where dying in the game means dying in real life.</p>
+              <p><strong>Genre:</strong> Action, Adventure, Fantasy, Sci-Fi</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(seraph.jpg) no-repeat"
+            >
+                <h3>Seraph of the End</h3>
+            </div>
+                <div class="buttons">
+                <a href="https://hianimez.to/seraph-of-the-end-battle-in-nagoya-1138" class="btn">Watch Now</a>
+                <button
+                      class="wishlist-btn"
+                      data-title="Seraph of the End"
+                      data-video="https://hianimez.to/seraph-of-the-end-battle-in-nagoya-1138"
+                    >
+                        ♡ Watch Later
+                    </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Kengan Ashura is a martial arts anime focusing on underground gladiator fights for corporate disputes.</p>
+              <p><strong>Genre:</strong> Action, Martial Arts, Sports</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(kuroko\ last\ game.jpg) no-repeat"
+            >
+                <h3>Kuroko's  Last Game</h3>
+            </div>
+                <div class="buttons">
+<a href="https://hianimez.to/kurokos-basketball-movie-4-last-game-423" class="btn">Watch Now</a>
+                <button
+                      class="wishlist-btn"
+                      data-title="Kuroko's Last Game"
+                      data-video="https://hianimez.to/kurokos-basketball-movie-4-last-game-423"
+                    >
+                        ♡ Watch Later
+                    </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Spirited Away is a fantasy film about a young girl navigating a magical world to save her parents.</p>
+              <p><strong>Genre:</strong> Fantasy, Adventure, Family</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(fate.jpg) no-repeat"
+            >
+                <h3>Fate/Zero</h3>
+            </div>
+                <div class="buttons">
+                <a href="https://hianimez.to/fatezero-177" class="btn">Watch Now</a>
+                <button
+                      class="wishlist-btn"
+                      data-title="Fate/Zero"
+                      data-video="https://hianimez.to/fatezero-177"
+                    >
+                        ♡ Watch Later
+                    </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Black Clover follows Asta and Yuno, orphans aiming to become the Wizard King in a world of magic and rivalry.</p>
+              <p><strong>Genre:</strong> Action, Adventure, Fantasy</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(hellsing.jpg) no-repeat"
+            >
+                <h3>Hellsing Ultimate</h3>
+            </div>
+                <div class="buttons">
+                <a href="https://hianimez.to/hellsing-ultimate-133" class="btn">Watch Now</a>
+                <button
+                      class="wishlist-btn"
+                      data-title="Hellsing Ultimate"
+                      data-video="https://hianimez.to/hellsing-ultimate-133"
+                    >
+                        ♡ Watch Later
+                    </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Tokyo Revengers follows a man who travels back in time to save his ex-girlfriend and change the fate of his friends in a gang-ridden world.</p>
+              <p><strong>Genre:</strong> Action, Drama, Supernatural</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(devilsline.jpg) no-repeat"
+            >
+                <h3>DEVILS'LINE</h3>
+            </div>
+                <div class="buttons">
+                <a href="https://hianimez.to/devils-line-4440" class="btn">Watch Now</a>
+                <button
+                      class="wishlist-btn"
+                      data-title="DEVILS'LINE"
+                      data-video="https://hianimez.to/devils-line-4440"
+                    >
+                        ♡ Watch Later
+                    </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Solo Leveling follows a weak hunter who gains powerful abilities and rises to become the strongest in a world filled with monsters.</p>
+              <p><strong>Genre:</strong> Action, Fantasy, Adventure</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(legend.jpg) no-repeat"
+            >
+                <h3>Legend of Exorcism</h3>
+            </div>
+                <div class="buttons">
+                <a href="https://hianimez.to/legend-of-soldier-19416?ref=search" class="btn">Watch Now</a>
+                <button
+                      class="wishlist-btn"
+                      data-title="Legend of Exorcism"
+                      data-video="https://hianimez.to/legend-of-soldier-19416?ref=search"
+                    >
+                        ♡ Watch Later
+                    </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Doraemon is a robotic cat from the future who helps a young boy navigate daily life with futuristic gadgets.</p>
+              <p><strong>Genre:</strong> Sci-Fi, Comedy, Family</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(jujutsu\ kaisen.jpg) no-repeat"
+            >
+                <h3>Jujutsu Kaisen</h3>
+            </div>
+                <div class="buttons">
+<a href="https://hianimez.to/jujutsu-kaisen-tv-534" class="btn">Watch Now</a>
+                <button
+                      class="wishlist-btn"
+                      data-title="Jujutsu Kaisen"
+                      data-video="https://hianimez.to/jujutsu-kaisen-tv-534"
+                    >
+                        ♡ Watch Later
+                    </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Dr Stone is a post-apocalyptic story where a genius boy uses science to rebuild civilization after humanity is petrified.</p>
+              <p><strong>Genre:</strong> Adventure, Sci-Fi, Drama</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(naruto.jpg) no-repeat"
+            >
+                <h3>Naruto</h3>
+            </div>
+                <div class="buttons">
+<a href="https://hianimez.to/naruto-677?ref=search" class="btn">Watch Now</a>
+                <button
+                      class="wishlist-btn"
+                      data-title="Naruto"
+                      data-video="https://hianimez.to/naruto-677?ref=search"
+                    >
+                        ♡ Watch Later
+                    </button>
+            </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Devilsline is a dark fantasy about vampires living secretly among humans and the struggles they face.</p>
+              <p><strong>Genre:</strong> Horror, Supernatural, Drama</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+<div class="swiper-pagination action-pagination"></div>
+</section>
+
+<!--family section start-->
+
+<section class="family" id="family" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+    <h1 class="heading">Family</h1>
+   <div class="swiper family-slider">
+    <div class="swiper-wrapper">
+
+
+    <div class="swiper-slide">
+    <div class="card">
+        <div
+          class="card-front box"
+          style="background: url(doraemon.jpg) no-repeat"
+        >
+            <h3>Doraemon</h3>
+        </div>
+        <div class="buttons">
+            <a href="https://hianimez.to/doraemon-us-17863" class="btn">Watch Now</a>
+            <button
+              class="wishlist-btn"
+              data-title="Doraemon"
+              data-video="https://hianimez.to/doraemon-us-17863"
+            >
+                ♡ Watch Later
+            </button>
+        </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Beyblade is an anime about competitive spinning top battles and the friendships formed through the sport.</p>
+              <p><strong>Genre:</strong> Action, Sports, Adventure</p>
+            </div>
+    </div>
+</div>
+
+<div class="swiper-slide">
+    <div class="card">
+        <div
+          class="card-front box"
+          style="background: url(dr\ stone.jpg) no-repeat"
+        >
+            <h3>Dr Stone</h3>
+        </div>
+        <div class="buttons">
+            <a href="https://hianimez.to/dr-stone-175" class="btn">Watch Now</a>
+            <button
+              class="wishlist-btn"
+              data-title="Doctor Stone"
+              data-video="https://hianimez.to/dr-stone-175"
+            >
+                ♡ Watch Later
+            </button>
+        </div>
+<div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Hellsing is a supernatural action series about a secret organization fighting vampires and other dark forces.</p>
+              <p><strong>Genre:</strong> Action, Horror, Supernatural</p>
+            </div>
+    </div>
+</div>
+
+<div class="swiper-slide">
+    <div class="card">
+        <div
+          class="card-front box"
+          style="background: url(devilsline.jpg) no-repeat"
+        >
+            <h3>Devil's line</h3>
+        </div>
+        <div class="buttons">
+            <a href="https://hianimez.to/devils-line-4440" class="btn">Watch Now</a>
+            <button
+              class="wishlist-btn"
+              data-title="Devilsline"
+              data-video="https://hianimez.to/devils-line-4440"
+            >
+                ♡ Watch Later
+            </button>
+        </div>
+        <div class="card-back">
+          <button class="close-btn">&times;</button>
+          <h4>Description:</h4>
+          <p>Description not available.</p>
+          <p><strong>Genre:</strong> Genre not specified.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="swiper-slide">
+    <div class="card">
+        <div
+          class="card-front box"
+          style="background: url(beyblade.jpg) no-repeat"
+        >
+            <h3>Beyblade</h3>
+        </div>
+        <div class="buttons">
+            <a href="https://hianimez.to/beyblade-metal-fury-17562" class="btn">Watch Now</a>
+            <button
+              class="wishlist-btn"
+              data-title="Beyblade"
+              data-video="https://hianimez.to/beyblade-metal-fury-17562"
+            >
+                ♡ Watch Later
+            </button>
+        </div>
+        <div class="card-back">
+          <button class="close-btn">&times;</button>
+          <h4>Description:</h4>
+          <p>Description not available.</p>
+          <p><strong>Genre:</strong> Genre not specified.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="swiper-slide">
+    <div class="card">
+        <div
+          class="card-front box"
+          style="background: url(hellsing.jpg) no-repeat"
+        >
+            <h3>Hellsing</h3>
+        </div>
+        <div class="buttons">
+            <a href="https://hianimez.to/hellsing-the-dawn-2722" class="btn">Watch Now</a>
+            <button
+              class="wishlist-btn"
+              data-title="Hellsing"
+              data-video="https://hianimez.to/hellsing-the-dawn-2722"
+            >
+                ♡ Watch Later
+            </button>
+        </div>
+        <div class="card-back">
+          <button class="close-btn">&times;</button>
+          <h4>Description:</h4>
+          <p>Description not available.</p>
+          <p><strong>Genre:</strong> Genre not specified.</p>
+        </div>
+    </div>
+</div>
+
+
+
+        <div class="swiper-slide">
+        <div class="card">
+            <div
+              class="card-front box"
+              style="background: url(kengan.jpg) no-repeat"
+            >
+                <h3>Kengan Ashura</h3>
+            </div>
+            <div class="buttons">
+                <a href="https://hianimez.to/kengan-ashura-season-2-18455" class="btn">Watch Now</a>
+                <button
+                  class="wishlist-btn"
+                  data-title="Kengan Ashura"
+                  data-video="https://hianimez.to/kengan-ashura-season-2-18455"
+                >
+                    ♡ Watch Later
+                </button>
+            </div>
+            <div class="card-back">
+              <button class="close-btn">&times;</button>
+              <h4>Description:</h4>
+              <p>Description not available.</p>
+              <p><strong>Genre:</strong> Genre not specified.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="swiper-slide">
+    <div class="card">
+        <div
+          class="card-front box"
+          style="background: url(one\ punch\ man.jpeg) no-repeat"
+        >
+            <h3>One Punch Man</h3>
+        </div>
+        <div class="buttons">
+            <a href="https://hianimez.to/one-punch-man-63" class="btn">Watch Now</a>
+            <button
+              class="wishlist-btn"
+              data-title="One Punch Man"
+              data-video="https://hianimez.to/one-punch-man-63"
+            >
+                ♡ Watch Later
+            </button>
+        </div>
+        <div class="card-back">
+          <button class="close-btn">&times;</button>
+          <h4>Description:</h4>
+          <p>Description not available.</p>
+          <p><strong>Genre:</strong> Genre not specified.</p>
+        </div>
+    </div>
+</div>
+
+<div class="swiper-slide">
+    <div class="card">
+        <div
+          class="card-front box"
+          style="background: url(sonic.jpg) no-repeat"
+        >
+            <h3>Sonic</h3>
+        </div>
+        <div class="buttons">
+            <a href="https://hianimez.to/sonic-x-6020" class="btn">Watch Now</a>
+            <button
+              class="wishlist-btn"
+              data-title="Sonic"
+              data-video="https://hianimez.to/sonic-x-6020"
+            >
+                ♡ Watch Later
+            </button>
+        </div>
+        <div class="card-back">
+          <button class="close-btn">&times;</button>
+          <h4>Description:</h4>
+          <p>Description not available.</p>
+          <p><strong>Genre:</strong> Genre not specified.</p>
+        </div>
+    </div>
+</div>
+
+<div class="swiper-slide">
+    <div class="card">
+        <div
+          class="card-front box"
+          style="background: url(spy\ x\ family.jpeg) no-repeat"
+        >
+            <h3>Spy x Family</h3>
+        </div>
+        <div class="buttons">
+<a href="https://hianimez.to/spy-x-family-17977" class="btn">Watch Now</a>
+              <button
+                class="wishlist-btn"
+                data-title="Spy x Family"
+                data-video="https://hianimez.to/spy-x-family-17977"
+              >
+                ♡ Watch Later
+              </button>
+        </div>
+        <div class="card-back">
+          <button class="close-btn">&times;</button>
+          <h4>Description:</h4>
+          <p>Description not available.</p>
+          <p><strong>Genre:</strong> Genre not specified.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+</div>
+<div class="swiper-pagination family-pagination"></div>
+</section>
+
+<!-- Animated Watch Later List Panel -->
+<div id="animated-wishlist" class="animated-wishlist">
+  <div class="animated-wishlist-header">
+    <h2>Watch Later List</h2>
+    <button id="animated-wishlist-close" class="close-btn">&times;</button>
+  </div>
+  <ul id="wishlist-items"></ul>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <a href="#" class="logo">Anime</a>
+      <p>Your ultimate destination for anime lovers. Discover, watch, and enjoy your favorite anime series all in one place.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#anime">Anime</a></li>
+        <li><a href="#action">Action</a></li>
+        <li><a href="#child">Child</a></li>
+        <li><a href="#family">Family</a></li>
+        <li><a href="#genre">Genre</a> </li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: support@animewebsite.com</p>
+      <p>Phone: +123 456 7890</p>
+      <div class="footer-socials">
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+      <p id="newsletter-message" style="color: #ccc; margin-top: 0.5rem;"></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- AOS Library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script src="main.js"> </script>
+</body>
+</html>

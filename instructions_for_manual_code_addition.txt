@@ -1,0 +1,30 @@
+Please add the following code snippet to your main.js file to enable the watch later toggle button functionality:
+
+// New event listener for watch later toggle button
+const watchLaterToggleBtn = document.getElementById('watch-later-toggle');
+if (watchLaterToggleBtn) {
+  watchLaterToggleBtn.addEventListener('click', () => {
+    animatedWishlist.classList.toggle('show');
+  });
+}
+
+Where to add:
+- Locate the existing event listeners for the watch later list panel in main.js, specifically after these lines:
+
+// Keyboard shortcut 'W' to toggle animated wishlist panel
+document.addEventListener('keydown', (e) => {
+  if (e.key.toLowerCase() === 'w') {
+    animatedWishlist.classList.toggle('show');
+  }
+});
+
+// Close button in animated wishlist panel
+animatedWishlistClose.addEventListener('click', () => {
+  animatedWishlist.classList.remove('show');
+});
+
+- Insert the new event listener code right after this block.
+
+This will ensure the new toggle button works consistently with the existing toggle mechanisms.
+
+If you want, I can also provide CSS styles for the toggle button to add to style.css. Let me know if you want that as well.

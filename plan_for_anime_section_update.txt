@@ -1,0 +1,20 @@
+Information Gathered:
+- The anime section currently uses divs with class "card" containing a child div with class "card-front box" and a sibling div with class "buttons".
+- The action section uses a similar structure but the "buttons" div contains anchor tags with hrefs pointing to video files, while the anime section mostly has "#" hrefs.
+- The action section's "card-front box" divs have background images and h3 titles similar to the anime section.
+- The main difference is in the structure and possibly the classes used for the swiper container and pagination.
+
+Plan:
+- Update the anime section's swiper container and pagination classes to match those of the action section.
+- Ensure the "buttons" div structure in the anime section matches the action section's structure, including anchor tags and buttons.
+- Preserve all anime items' names and pictures exactly as they are.
+- Make sure the swiper-wrapper and swiper-slide classes are consistent with the action section.
+- No changes to other sections or files.
+
+Dependent Files to be edited:
+- INDEX .html
+
+Follow-up steps:
+- Verify the updated anime section renders correctly and matches the style and structure of the action section.
+- Test swiper functionality for the anime section.
+- Confirm no changes to anime items' names or pictures.
